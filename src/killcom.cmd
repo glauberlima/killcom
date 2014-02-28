@@ -1,4 +1,7 @@
 @echo off
+
+rem Please run as administrator, bitch!
+
 %SystemRoot%\System32\iisreset.exe -stop
 net stop comsysapp
 net stop msdtc 

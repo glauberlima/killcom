@@ -8,6 +8,7 @@ taskkill -im WebDev.WebServer40.EXE -f
 taskkill -im dllhost.exe -f
 taskkill -im w3wp.exe -f
 for /d %%i in ("%SystemRoot%\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\*") do rd /s /q "%%i"
+for /d %%i in ("%SystemRoot%\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\*") do rd /s /q "%%i"
 net start msdtc
 net start comsysapp
 net start "TTI WCF Host Service"
